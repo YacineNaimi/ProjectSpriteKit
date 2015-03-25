@@ -583,7 +583,7 @@
         
         
         //Afficher la fenêtre PopUp
-        self.passerPopUp = [[UIAlertView alloc] initWithTitle:@"Passer" message:[NSString stringWithFormat:@"Veuillez remettre l'appareil à : "/*, (self.numerosJoueur+1)%self.nombresJoueurs*/] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        self.passerPopUp = [[UIAlertView alloc] initWithTitle:@"Passer" message:[NSString stringWithFormat:@"Veuillez remettre l'appareil à : %@", self.nameJoueurArray[self.numerosJoueur+1]] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         self.passerPopUp.tag = 4;
         [self.passerPopUp show];
         
